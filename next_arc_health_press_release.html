@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>健康経営優良法人2025 認定のお知らせ｜株式会社Next Arc</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      background: #fff;
+      color: #333;
+      line-height: 1.8;
+    }
+
+    .header {
+      background: #fff;
+      border-bottom: 1px solid #eee;
+      padding: 18px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 22px;
+      letter-spacing: 2px;
+      color: #1a1a1a;
+      text-decoration: none;
+    }
+
+    .logo span { color: #c0392b; }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+      font-size: 13px;
+      color: #555;
+    }
+
+    .nav-links li { cursor: pointer; }
+    .nav-links li:hover { color: #c0392b; }
+
+    .hero {
+      background: linear-gradient(135deg, #fdf4f4 0%, #fff8f8 60%, #fff 100%);
+      padding: 70px 40px 60px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 240px; height: 240px;
+      border-radius: 50%;
+      background: rgba(192,57,43,0.06);
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -40px; left: -40px;
+      width: 160px; height: 160px;
+      border-radius: 50%;
+      background: rgba(192,57,43,0.04);
+    }
+
+    .hero-eyebrow {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 3px;
+      color: #c0392b;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .hero-date {
+      font-size: 13px;
+      color: #999;
+      margin-bottom: 14px;
+    }
+
+    .hero-title {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.5;
+      color: #1a1a1a;
+      margin-bottom: 24px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-title em {
+      font-style: normal;
+      color: #c0392b;
+      border-bottom: 2px solid #c0392b;
+      padding-bottom: 1px;
+    }
+
+    .badge-row {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+
+    .badge {
+      background: #fff;
+      border: 1.5px solid #c0392b;
+      color: #c0392b;
+      font-size: 12px;
+      font-weight: 500;
+      padding: 5px 16px;
+      border-radius: 30px;
+    }
+
+    .section {
+      padding: 60px 40px;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      color: #c0392b;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 24px;
+      padding-bottom: 14px;
+      border-bottom: 2px solid #f5e0de;
+      position: relative;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -2px; left: 0;
+      width: 48px; height: 2px;
+      background: #c0392b;
+    }
+
+    .lead-text {
+      font-size: 15px;
+      color: #444;
+      line-height: 2;
+      margin-bottom: 16px;
+    }
+
+    .cert-box {
+      background: #fdf4f4;
+      border-left: 4px solid #c0392b;
+      border-radius: 0 8px 8px 0;
+      padding: 24px 28px;
+      margin: 32px 0;
+    }
+
+    .cert-box-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: #c0392b;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    .cert-box p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.9;
+    }
+
+    .cert-info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin: 32px 0;
+    }
+
+    .cert-info-card {
+      background: #fff;
+      border: 1px solid #ede8e3;
+      border-radius: 10px;
+      padding: 20px 22px;
+    }
+
+    .cert-info-card .cic-label {
+      font-size: 11px;
+      color: #aaa;
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+
+    .cert-info-card .cic-value {
+      font-size: 15px;
+      font-weight: 700;
+      color: #1a1a1a;
+    }
+
+    .cert-info-card .cic-sub {
+      font-size: 13px;
+      color: #666;
+      margin-top: 3px;
+    }
+
+    .initiatives-list {
+      list-style: none;
+      display: grid;
+      gap: 16px;
+      margin: 24px 0;
+    }
+
+    .initiatives-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 18px 20px;
+      background: #fff;
+      border: 1px solid #ede8e3;
+      border-radius: 10px;
+      font-size: 14px;
+      color: #444;
+      line-height: 1.7;
+    }
+
+    .init-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #fdf0f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 16px;
+    }
+
+    .init-content strong {
+      display: block;
+      font-size: 14px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 4px;
+    }
+
+    .comment-card {
+      background: #fff;
+      border: 1px solid #ede8e3;
+      border-radius: 12px;
+      padding: 32px;
+      margin: 24px 0;
+      position: relative;
+    }
+
+    .comment-card::before {
+      content: '\201C';
+      font-size: 80px;
+      color: #f5e0de;
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      line-height: 1;
+      font-family: Georgia, serif;
+    }
+
+    .comment-text {
+      font-size: 15px;
+      color: #444;
+      line-height: 2;
+      padding-left: 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .comment-author {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 1px solid #f5e0de;
+    }
+
+    .author-avatar {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #c0392b, #e74c3c);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 16px;
+      color: #fff;
+      flex-shrink: 0;
+    }
+
+    .author-name {
+      font-weight: 700;
+      font-size: 14px;
+      color: #1a1a1a;
+    }
+
+    .author-title {
+      font-size: 12px;
+      color: #999;
+      margin-top: 2px;
+    }
+
+    .divider {
+      height: 1px;
+      background: #f5e0de;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .outlook-section {
+      background: #1a1a1a;
+      padding: 60px 40px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .outlook-section .section-label { color: #e74c3c; }
+
+    .outlook-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .outlook-text {
+      font-size: 14px;
+      color: #bbb;
+      line-height: 2;
+      max-width: 640px;
+      margin: 0 auto 32px;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background: #c0392b;
+      color: #fff;
+      padding: 14px 36px;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .company-footer {
+      background: #fdf4f4;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .company-name {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      color: #1a1a1a;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+
+    .company-name span { color: #c0392b; }
+
+    .company-info {
+      font-size: 12px;
+      color: #999;
+      line-height: 2;
+    }
+
+    .footer-bar {
+      background: #1a1a1a;
+      text-align: center;
+      padding: 14px;
+      font-size: 11px;
+      color: #666;
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <a class="logo" href="https://next-arc.co.jp/">Next<span>Arc</span></a>
+    <ul class="nav-links">
+      <li>私たちについて</li>
+      <li>サービス</li>
+      <li>会社情報</li>
+      <li>採用情報</li>
+      <li>お知らせ</li>
+    </ul>
+  </div>
+
+  <div class="hero">
+    <p class="hero-eyebrow">Press Release</p>
+    <p class="hero-date">2025年6月12日</p>
+    <h1 class="hero-title">
+      「健康経営優良法人<em>2025</em>」に<br>認定されました
+    </h1>
+    <div class="badge-row">
+      <span class="badge">中小規模法人部門</span>
+      <span class="badge">2年連続認定</span>
+      <span class="badge">経済産業省認定制度</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <p class="section-label">Overview</p>
+    <h2 class="section-title">認定の概要</h2>
+    <p class="lead-text">
+      株式会社Next Arc（旧：株式会社APコレクト）は、経済産業省と日本健康会議が実施する「健康経営優良法人認定制度」において、<strong>「健康経営優良法人2025（中小規模法人部門）」</strong>に認定されました。
+    </p>
+    <p class="lead-text">
+      本認定は、従業員の健康保持・増進に向けた取り組みを積極的に推進している企業を、特に優良な健康経営を実践している法人として国が認定するものです。
+    </p>
+
+    <div class="cert-box">
+      <p class="cert-box-title">健康経営優良法人認定制度とは</p>
+      <p>「健康経営優良法人認定制度」は、地域の健康課題に即した取り組みや日本健康会議が進める健康増進の取り組みをもとに、特に優良な健康経営を実践している大企業や中小企業等の法人を顕彰する制度です。（経済産業省）</p>
+    </div>
+
+    <div class="cert-info-grid">
+      <div class="cert-info-card">
+        <p class="cic-label">認定名称</p>
+        <p class="cic-value">健康経営優良法人2025</p>
+        <p class="cic-sub">中小規模法人部門</p>
+      </div>
+      <div class="cert-info-card">
+        <p class="cic-label">認定主体</p>
+        <p class="cic-value">経済産業省</p>
+        <p class="cic-sub">日本健康会議</p>
+      </div>
+      <div class="cert-info-card">
+        <p class="cic-label">認定年度</p>
+        <p class="cic-value">2025年度</p>
+        <p class="cic-sub">2年連続認定</p>
+      </div>
+      <div class="cert-info-card">
+        <p class="cic-label">対象会社</p>
+        <p class="cic-value">株式会社Next Arc</p>
+        <p class="cic-sub">旧：株式会社APコレクト</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section">
+    <p class="section-label">Initiatives</p>
+    <h2 class="section-title">具体的な取り組み内容</h2>
+    <ul class="initiatives-list">
+      <li>
+        <div class="init-icon">🏥</div>
+        <div class="init-content">
+          <strong>定期健康診断の受診推進・フォロー体制</strong>
+          全従業員の定期健康診断受診率100%を目標に、受診後の結果フォローアップや二次検診の受診支援を徹底しています。
+        </div>
+      </li>
+      <li>
+        <div class="init-icon">🧘</div>
+        <div class="init-content">
+          <strong>メンタルヘルス対策の充実</strong>
+          ストレスチェックの実施・集団分析、外部EAP（従業員支援プログラム）の導入により、従業員が気軽に相談できる環境を整えています。
+        </div>
+      </li>
+      <li>
+        <div class="init-icon">🏃</div>
+        <div class="init-content">
+          <strong>運動・生活習慣改善の促進</strong>
+          ウォーキングイベントや運動習慣の啓発を通じて、日常的な運動習慣の定着を促進しています。
+        </div>
+      </li>
+      <li>
+        <div class="init-icon">🚭</div>
+        <div class="init-content">
+          <strong>禁煙サポートと職場環境整備</strong>
+          禁煙プログラムの提供と就業時間中の禁煙ルールにより、従業員が健康的に働ける職場環境を実現しています。
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section">
+    <p class="section-label">Message</p>
+    <h2 class="section-title">代表者コメント</h2>
+    <div class="comment-card">
+      <p class="comment-text">
+        この度、「健康経営優良法人2025」に認定いただいたことを、大変光栄に思います。当社にとって最も大切な資産は「人」です。お客様のお客様に笑顔と感動を届けるためには、まず私たちスタッフ一人ひとりが心身ともに健康で、生き生きと働ける環境が不可欠です。今後も従業員の健康と幸福を最優先に、健康経営をさらに推進してまいります。
+      </p>
+      <div class="comment-author">
+        <div class="author-avatar">NA</div>
+        <div>
+          <p class="author-name">株式会社Next Arc 代表取締役</p>
+          <p class="author-title">Next Arc CEO</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="outlook-section">
+    <p class="section-label">Future</p>
+    <h2 class="outlook-title">今後の目標・展望</h2>
+    <p class="outlook-text">
+      Next Arcは「お客様のお客様に寄り添い、笑顔と感動を届ける」というミッションのもと、それを実現する最大の基盤は従業員の健康と活力であると考えています。今後も健康経営優良法人の認定維持にとどまらず、従業員満足度のさらなる向上と離職率低下を目指し、業界トップレベルの健康経営企業として成長し続けてまいります。
+    </p>
+    <a class="cta-btn" href="#">健康経営の詳細はこちら</a>
+  </div>
+
+  <div class="company-footer">
+    <p class="company-name">Next<span>Arc</span></p>
+    <p class="company-info">
+      〒105-0004　東京都港区新橋四丁目11番1号　A-PLACE新橋 2階<br>
+      TEL: 03-5537-7820 ／ FAX: 03-5537-7821<br>
+      https://next-arc.co.jp/
+    </p>
+  </div>
+
+  <div class="footer-bar">
+    Copyright © 株式会社Next Arc All Rights Reserved.
+  </div>
+
+</body>
+</html>
